@@ -1,0 +1,27 @@
+{
+  "name": "alx-backend-javascript",
+  "version": "1.0.0",
+  "description": "learning js and es6",
+  "type": "module",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "."
+  },
+  "keywords": [
+    "js",
+    "es6",
+    "jest",
+    "babbel",
+    "nodejs"
+  ],
+  "author": "abogonono1@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.25.4",
+    "eslint": "^9.11.1",
+    "jest": "^29.7.0"
+  }
+}

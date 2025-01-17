@@ -1,17 +1,15 @@
 {
-  "name": "node_js_basics",
+  "name": "unittests_in_js",
   "version": "1.0.0",
-  "description": "A simple project for learning the basics of Node.js for server-side apps.",
-  "main": "index.js",
+  "description": "A project for learning the basics of unittests in Node.js.",
   "author": "",
   "private": true,
   "license": "MIT",
   "scripts": {
     "lint": "./node_modules/.bin/eslint",
-    "check-lint": "lint [0-9]*.js",
     "lint-all": "./node_modules/.bin/eslint [0-9]*.js",
     "lint-fix-all": "./node_modules/.bin/eslint --fix [0-9]*.js",
-    "test": "./node_modules/mocha/bin/mocha --require babel-register --exit",
+    "test": "node ./node_modules/mocha/bin/mocha --require babel-register --exit",
     "dev": "nodemon --exec babel-node --presets babel-preset-env ./full_server/server.js ./database.csv"
   },
   "dependencies": {
@@ -32,10 +30,13 @@
     "sinon": "^7.5.0"
   },
   "repository": {
-    "type": "git"
+    "type": "git",
+    "url": "https://github.com/B3zaleel/alx-backend-javascript"
   },
   "bugs": {
+    "url": "https://github.com/B3zaleel/alx-backend-javascript/issues"
   },
+  "homepage": "https://github.com/B3zaleel/alx-backend-javascript/blob/main/0x06-unittests_in_js/README.md",
   "engines": {
     "node": "16.x",
     "npm": "8.x",

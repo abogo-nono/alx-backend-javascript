@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+
+    <script>
+        const x = 2, y = 3
+
+        const addV1 = (a, b) => a + b
+        const addV2 = (a, b) => { return a + b }
+        const addV3 = function (a, b) { return a + b }
+
+        function addV0(a, b) {
+            return a + b
+        }
+        /*
+            console.log("addV0: ", addV0(x, y))
+            console.log("addV1: ", addV1(x, y))
+            console.log("addV2: ", addV2(x, y))
+            console.log("addV3: ", addV3(x, y))
+        */
+
+
+        class Person {
+            static drinkingAge = 21
+
+            constructor(first_name, last_name) {
+                this._first_name = first_name
+                this._last_name = last_name
+            }
+
+            set age(value) {
+                this._age = value
+            }
+
+            get age() {
+                return this._age
+            }
+
+            canDrink() {
+                return this._age >= Person.drinkingAge
+            }
+
+            introducePerson() {
+                return `My name is ${this._first_name} ${this._last_name}, I'm ${this._age} years old.`
+            }
+        }
+
+        class Student extends Person {
+            constructor (first_name, last_name, regNum)
+            {
+                super(first_name, last_name)
+
+                this._regNum = regNum
+            }
+            
+            set level(value) {
+                this._level = value
+            }
+
+            get level() {
+                return this._level
+            }
+        }
+
+        // p1 = new Person("abogo", "Nono")
+        p2 = new Student("abogo", "Nono", "22t2850")
+        p2.age = 21
+        p2.level = 2
+
+        console.log(p2);
+    </script>
+
+</head>
+
+<body>
+</body>
+
+</html>

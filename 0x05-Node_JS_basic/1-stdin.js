@@ -1,4 +1,3 @@
-#!/usr/bin/node
 process.stdout.write('Welcome to ALX, what is your name?\n');
 
 process.stdin.on('readable', () => {

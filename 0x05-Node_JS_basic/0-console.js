@@ -1,4 +1,3 @@
-#!/usr/bin/node
 const displayMessage = (message) => {
   console.log(message);
 };
